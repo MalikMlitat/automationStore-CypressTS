@@ -4,11 +4,11 @@ feature: Cart
 scenarios:
   - title: Apply Coupon when the coupon is valid
     steps:
-      - given: "the userm is on the Cart page"
+      - given: "the user is on the Cart page"
       - and: "the Cart has items"
       - when: "the user enters a valid coupon in the Coupon field"
       - and: 'clicks the "Apply Coupon" button'
-      - then: 'the sucess message "Success: Your coupon discount has been applied!" should appear'
+      - then: 'the success message "Success: Your coupon discount has been applied!" should appear'
       - and: 'the discount field should appear above the "Total" field'
       - and: "the discount should be subtracted from the Total value"
 
